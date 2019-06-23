@@ -18,7 +18,7 @@ MINOR_VER=$([[ "$(sw_vers -productVersion)" =~ [0-9]+\.([0-9]+) ]] && echo ${BAS
 
 # download kexts
 mkdir ./kexts && cd ./kexts
-download_rehabman os-x-fakesmc-kozlek RehabMan-FakeSMC
+# download_rehabman os-x-fakesmc-kozlek RehabMan-FakeSMC
 download_rehabman os-x-voodoo-ps2-controller RehabMan-Voodoo
 if [[ $MINOR_VER -le 8 ]]; then
     # use older version of RealtekRTL8111.kext for 10.8 and older
@@ -27,9 +27,9 @@ else
     download_rehabman os-x-realtek-network RehabMan-Realtek-Network
 fi
 download_rehabman os-x-intel-network RehabMan-IntelMausiEthernet
-download_rehabman os-x-intel-backlight RehabMan-IntelBacklight
+# download_rehabman os-x-intel-backlight RehabMan-IntelBacklight
 download_rehabman os-x-acpi-battery-driver RehabMan-Battery
-download_rehabman os-x-eapd-codec-commander RehabMan-CodecCommander
+# download_rehabman os-x-eapd-codec-commander RehabMan-CodecCommander
 download_rehabman os-x-fake-pci-id RehabMan-FakePCIID
 download_rehabman os-x-brcmpatchram RehabMan-BrcmPatchRAM
 download_rehabman os-x-atheros-3k-firmware RehabMan-Atheros
@@ -40,6 +40,9 @@ download_acidanthera Lilu acidanthera-Lilu
 download_acidanthera WhateverGreen acidanthera-WhateverGreen
 download_acidanthera AirportBrcmFixup acidanthera-AirportBrcmFixup
 download_acidanthera BT4LEContiunityFixup acidanthera-BT4LEContiunityFixup
+download_acidanthera HibernationFixup acidanthera-HibernationFixup
+download_acidanthera VirtualSMC acidanthera-VirtualSMC
+download_acidanthera CPUFriend acidanthera-CPUFriend
 download_acidanthera AppleALC acidanthera-AppleALC
 cd ..
 
