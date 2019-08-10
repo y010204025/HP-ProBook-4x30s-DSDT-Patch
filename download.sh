@@ -27,11 +27,7 @@ else
     download_rehabman os-x-realtek-network RehabMan-Realtek-Network
 fi
 download_rehabman os-x-intel-network RehabMan-IntelMausiEthernet
-# download_rehabman os-x-intel-backlight RehabMan-IntelBacklight
-# download_rehabman os-x-acpi-battery-driver RehabMan-Battery use virtualsmc'S battery
-# download_rehabman os-x-eapd-codec-commander RehabMan-CodecCommander
 download_rehabman os-x-fake-pci-id RehabMan-FakePCIID
-download_rehabman os-x-brcmpatchram RehabMan-BrcmPatchRAM
 download_rehabman os-x-atheros-3k-firmware RehabMan-Atheros
 download_rehabman os-x-acpi-poller RehabMan-Poller
 download_rehabman os-x-usb-inject-all RehabMan-USBInjectAll
@@ -44,6 +40,15 @@ download_acidanthera HibernationFixup acidanthera-HibernationFixup
 download_acidanthera VirtualSMC acidanthera-VirtualSMC
 download_acidanthera CPUFriend acidanthera-CPUFriend
 download_acidanthera AppleALC acidanthera-AppleALC
+download_headkaze OS-X-BrcmPatchRAM headkaze-OS-X-BrcmPatchRAM
+download_al3xtjames NoTouchID al3xtjames-NoTouchID
+# download_acidanthera VoodooPS2 acidanthera-VoodooPS2 备选，已测试有兼容问题
+# download_rehabman os-x-intel-backlight RehabMan-IntelBacklight //切换为BacklightFixup
+# download_rehabman os-x-acpi-battery-driver RehabMan-Battery use virtualsmc'S battery
+# download_rehabman os-x-eapd-codec-commander RehabMan-CodecCommander //切换到applealc后，不再需要
+# download_rehabman os-x-brcmpatchram RehabMan-BrcmPatchRAM //在10.15蓝牙会出现问题，切换到其他分支
+
+
 cd ..
 
 # download tools
