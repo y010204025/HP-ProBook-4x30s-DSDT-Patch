@@ -32,12 +32,12 @@ install_backlight_kexts
 
 #//REVIEW_REHABMAN: install temporary replacement for AppleALC Info.plist
 # remove when official build has updated pinconfig data for 4540s audio codec
-sudo cp kexts/AppleALC_Info.plist /Library/Extensions/AppleALC.kext/Contents/Info.plist
+# sudo cp kexts/AppleALC_Info.plist /Library/Extensions/AppleALC.kext/Contents/Info.plist
 
 # install special kexts specific to ProBook
-install_kext kexts/HSSDBlockStorage.kext
-install_kext kexts/JMB38X.kext
-install_kext kexts/JMicronATA.kext
+# install_kext kexts/HSSDBlockStorage.kext
+# install_kext kexts/JMB38X.kext
+# install_kext kexts/JMicronATA.kext
 # install other common kexts
 install_kext _tools/kexts/XHCI-unsupported.kext
 install_kext _tools/kexts/SATA-unsupported.kext
