@@ -28,7 +28,7 @@ else
 fi
 download_rehabman os-x-intel-network RehabMan-IntelMausiEthernet
 # download_rehabman os-x-intel-backlight RehabMan-IntelBacklight
-download_rehabman os-x-acpi-battery-driver RehabMan-Battery
+# download_rehabman os-x-acpi-battery-driver RehabMan-Battery use virtualsmc'S battery
 # download_rehabman os-x-eapd-codec-commander RehabMan-CodecCommander
 download_rehabman os-x-fake-pci-id RehabMan-FakePCIID
 download_rehabman os-x-brcmpatchram RehabMan-BrcmPatchRAM
