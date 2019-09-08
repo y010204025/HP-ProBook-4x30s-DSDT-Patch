@@ -27,7 +27,7 @@ else
     download_rehabman os-x-realtek-network RehabMan-Realtek-Network
 fi
 download_rehabman os-x-intel-network RehabMan-IntelMausiEthernet
-download_rehabman os-x-fake-pci-id RehabMan-FakePCIID
+# download_rehabman os-x-fake-pci-id RehabMan-FakePCIID //暂时弃用，博通无线网卡部分可由AirportBrcmFixup实现
 download_rehabman os-x-atheros-3k-firmware RehabMan-Atheros
 download_rehabman os-x-acpi-poller RehabMan-Poller
 download_rehabman os-x-usb-inject-all RehabMan-USBInjectAll
