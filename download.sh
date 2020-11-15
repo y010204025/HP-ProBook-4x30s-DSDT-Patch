@@ -26,12 +26,12 @@ if [[ $MINOR_VER -le 8 ]]; then
 else
     download_rehabman os-x-realtek-network RehabMan-Realtek-Network
 fi
-download_rehabman os-x-intel-network RehabMan-IntelMausiEthernet
+# download_rehabman os-x-intel-network RehabMan-IntelMausiEthernet
 # download_rehabman os-x-fake-pci-id RehabMan-FakePCIID //暂时弃用，博通无线网卡部分可由AirportBrcmFixup实现
-download_rehabman os-x-atheros-3k-firmware RehabMan-Atheros
-download_rehabman os-x-acpi-poller RehabMan-Poller
-download_rehabman os-x-usb-inject-all RehabMan-USBInjectAll
-download_rehabman applebacklightfixup RehabMan-BacklightFixup
+# download_rehabman os-x-atheros-3k-firmware RehabMan-Atheros
+# download_rehabman os-x-acpi-poller RehabMan-Poller
+# download_rehabman os-x-usb-inject-all RehabMan-USBInjectAll
+# download_rehabman applebacklightfixup RehabMan-BacklightFixup
 download_acidanthera Lilu acidanthera-Lilu
 download_acidanthera WhateverGreen acidanthera-WhateverGreen
 download_acidanthera AirportBrcmFixup acidanthera-AirportBrcmFixup
@@ -40,7 +40,8 @@ download_acidanthera HibernationFixup acidanthera-HibernationFixup
 download_acidanthera VirtualSMC acidanthera-VirtualSMC
 download_acidanthera CPUFriend acidanthera-CPUFriend
 download_acidanthera AppleALC acidanthera-AppleALC
-download_headkaze OS-X-BrcmPatchRAM headkaze-OS-X-BrcmPatchRAM
+download_acidanthera IntelMausi acidanthera-IntelMausi
+# download_headkaze OS-X-BrcmPatchRAM headkaze-OS-X-BrcmPatchRAM
 download_al3xtjames NoTouchID al3xtjames-NoTouchID
 # download_acidanthera VoodooPS2 acidanthera-VoodooPS2 备选，已测试有兼容问题
 # download_rehabman os-x-intel-backlight RehabMan-IntelBacklight //切换为BacklightFixup
